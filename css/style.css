@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+/* Обнуление стилей */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px;
+}
+body {
+	overflow-x: hidden;
+	line-height: 1;
+	font-family: "Roboto", sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	/*   */
+	padding: 20px;
+}
+
+/*======================== */
+.main {
+	padding-top: 50px;
+}
+.upper-block {
+	height: 100px;
+	background: linear-gradient(rgba(0, 212, 255, 0.5) 0%, rgba(90, 90, 173, 0.5) 100%);
+}
+.who-we-are {
+	background: #5d62b5;
+	padding: 100px 87px;
+	border-radius: 40px;
+	position: relative;
+}
+.who-we-are::before {
+	content: "";
+	position: absolute;
+	bottom: -128px;
+	left: -24px;
+	width: 665px;
+	height: 591px;
+	background: url("../img/who-we-are/Blob.png") 0 0 no-repeat;
+}
+._container {
+	width: 1020px;
+	margin: 0 auto;
+	margin-bottom: 300px;
+	margin-top: -40px;
+}
+.repeted-block {
+	color: #fff;
+}
+.repeted-block__suptitle {
+	background-image: url("../img/icon/icon.svg");
+	background-repeat: no-repeat;
+	position: relative;
+	padding-left: 30px;
+	padding-top: 2px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 2;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 33px;
+}
+.repeted-block__suptitle::after {
+	content: url("../img/who-we-are/dotes.png");
+	position: absolute;
+	bottom: -610%;
+	left: 95%;
+}
+.repeted-block__title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	margin-bottom: 36px;
+	max-width: 583px;
+}
+.who-we-are__text {
+	line-height: 24px;
+	color: #fff;
+	margin-bottom: 54px;
+}
+.who-we-are__img {
+	margin-bottom: -200px;
+	border-radius: 40px;
+	position: relative;
+}
+
+.block-1__item {
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	margin-top: -20px;
+	position: relative;
+}
+.block-1__item:last-child {
+	margin-bottom: 30px;
+}
+.block-1__item_black {
+	background-color: #000;
+	left: 30px;
+}
+.block-1__item_red {
+	background-color: #ff0000;
+	z-index: 2;
+	position: relative;
+}
+.block-1__item_yellow {
+	background-color: #ffff00;
+	color: #000;
+	right: 30px;
+}
+.block-1__item_yellow span {
+	position: relative;
+	z-index: 4;
+	left: 100px;
+	top: 20px;
+}
+
+.block-2__item {
+	padding: 15px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+.block-2__item:last-child {
+	margin-bottom: 30px;
+}
+.block-2__item_black {
+	background-color: #000;
+	top: 0px;
+	z-index: 5;
+	position: sticky;
+}
+.block-2__item_red {
+	background-color: #ff0000;
+}
+
+.block-2__item_yellow {
+	background-color: #ffff00;
+	color: #000;
+	top: -20px;
+	z-index: 1;
+}
+.block-3 {
+	position: relative;
+}
+.block-3__item {
+	padding: 15px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+.block-3__item_black {
+	background-color: #000;
+	position: absolute;
+	right: 30px;
+	top: -30px;
+}
+.block-3__item_red {
+	background-color: #ff0000;
+	margin-bottom: 100px;
+}
+
+.block-3__item_yellow {
+	background-color: #ffff00;
+	color: #000;
+	position: fixed;
+	top: 0px;
+	right: 100px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.list__item {
+	position: relative;
+	padding-left: 12px;
+	margin-bottom: 10px;
+}
+.list__item:nth-child(2),
+.list__item:last-child {
+	margin-left: 40px;
+}
+.list__item::before {
+	content: "";
+	border-radius: 50%;
+	background-color: rgb(88, 15, 15);
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+.header {
+	background-color: rgb(81, 40, 85);
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+.image {
+	position: relative;
+	display: inline-block;
+}
+.image::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.397);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.image:hover::before {
+	opacity: 0;
+}
+.image__item {
+	width: 300px;
+}
